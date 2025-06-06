@@ -2,10 +2,12 @@
 
 Antoine Schieb
 
+# Please note
+
+All of the training has been done on kaggle servers, which is why it was easier for me to work on a single notebook. The notebook is called 'main.ipynb' (and it used to be called 'explore.ipynb' if you look at earlier versions in the commit history).
+
 
 # Methodology
-
-Please note: All of the training has been done on kaggle servers, which is why it was easier for me to work on a single notebook. The notebook is called 'main.ipynb' (and it used to be called 'explore.ipynb' if you look at earlier versions in the commit history).
 
 Here is a rough overview of how I approached this problem chronologically. This same overview can be observed in the commit history. 
 
@@ -27,7 +29,7 @@ But I still wanted to keep the method in my solution for the sake of this exerci
 6 - So for the final training I did 5-fold CV to generate my "hard_to_classify" labels, this time on the whole dataset. Then I trained my model on the whole dataset using a weight a 3 for hard examples, and 1 for easy examples, and with the same hyperparameters as before. Finally, I used the model to generate predictions on the provided test set.
 
 
-# Some more methods to explore
+# Some more methods to explore...
 
 - Data augmentation: I didn't feel the need to apply data augmentation here because we already had a very large dataset. 
 - Ensembling methods: From my experience, these are often a "quick win" in problems like these, so it would probably be worth a shot. But they're not too interesting to implement. 
