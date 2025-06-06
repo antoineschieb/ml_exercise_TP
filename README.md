@@ -31,6 +31,6 @@ But I still wanted to keep the method in my solution for the sake of this exerci
 
 # Some more methods to explore...
 
-- Data augmentation: I didn't feel the need to apply data augmentation here because we already had a very large dataset. 
-- Ensembling methods: From my experience, these are often a "quick win" in problems like these, so it would probably be worth a shot. But they're not too interesting to implement. 
+- Data augmentation: I didn't feel the need to apply data augmentation here because we already had a very large and diverse dataset. But it may well help the performance. 
+- Ensembling methods: From my experience, these are often a "quick win" in problems like these, so it would probably be worth a shot. But they're not too interesting to implement.
 - Trying out other encoders: I quickly put all my money on efficientnet b0 trained on Imagenet 1K because it's a very versatile model that has proven to be able to adapt to many tasks in computer vision. But it could be worth looking at other models, including some smaller ones because the images are very small (64x64), or even some models specifically pretrained for face recognition tasks.
